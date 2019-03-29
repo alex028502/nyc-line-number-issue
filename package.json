@@ -1,14 +1,14 @@
 {
-  "name": "nyc-line-number-issue",
-  "version": "1.0.0",
-  "description": "showing wrong line numbers in stack traces with nyc",
-  "scripts": {
-    "test": "mocha example.js",
-    "coverage-1": "nyc mocha example.js",
-    "coverage-2": "nyc npm test"
-  },
   "dependencies": {
-    "mocha": "^6.0.2",
-    "nyc": "^13.3.0"
-  }
+    "nyc": "^13.3.0",
+    "mocha": "^6.0.2"
+  },
+  "scripts": {
+    "coverage-2": "nyc --cache false npm test",
+    "coverage-1": "nyc --cache false mocha example.js",
+    "test": "mocha example.js"
+  },
+  "description": "showing wrong line numbers in stack traces with nyc",
+  "version": "1.0.0",
+  "name": "nyc-line-number-issue"
 }
