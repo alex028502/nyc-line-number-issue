@@ -6,7 +6,9 @@
   "scripts": {
     "coverage-2": "nyc --cache false npm test",
     "coverage-1": "nyc --cache false mocha example.js",
-    "test": "mocha example.js"
+    "test": "mocha example.js",
+    "simple-test": "node negative-square-root/test.js",
+    "simple-coverage": "nyc --cache npm run simple-test"
   },
   "description": "showing wrong line numbers in stack traces with nyc",
   "version": "1.0.0",
